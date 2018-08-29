@@ -41,6 +41,9 @@ use Facebook\Exceptions\FacebookSDKException;
  *
  * @package Facebook
  */
+if (!session_id()) {
+    session_start();
+}
 class FacebookRedirectLoginHelper
 {
     /**
