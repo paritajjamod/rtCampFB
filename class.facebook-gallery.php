@@ -16,7 +16,7 @@ class FBGallery
 
 		//print_r($config['app_secret']);
 		$this->helper = $this->fb->getRedirectLoginHelper();
-        
+          $_SESSION['FBRLH_state']=$_GET['state'];
         
 
 
