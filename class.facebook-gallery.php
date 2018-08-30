@@ -70,7 +70,7 @@ class FBGallery
 
             return $this->displayPhotos($_GET['id'],$_GET['title']);
 		 } else {
-			  $loginUrl = $this->helper->getLoginUrl('https://rtcampfb1.herokuapp.com/', $this->permissions);
+			  $loginUrl = $this->helper->getLoginUrl('https://rtcampfb1.herokuapp.com/index.php', $this->permissions);
               echo '<div style="margin-top:150px"><center><a style="width:300px" href="' . $loginUrl . '" class="btn btn-block btn-lg btn-social btn-facebook"><span class="fa fa-facebook"></span> Sign in with Facebook</a></center></div>';
 			 // echo '<a href="' . $loginUrl . '">Login with Facebook</a>';
 		  }
